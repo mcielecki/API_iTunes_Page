@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // 2 variables to make search by pressing "Enter" key posibble
-    let btn = document.querySelector(".page-button");
+    const btn = document.querySelector(".page-button");
     let searchValue = document.querySelector(".page-search");
 
     searchValue.addEventListener("keyup", function (event) {
