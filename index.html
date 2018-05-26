@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie rekrutacyjne - Marcin Cielecki</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="images/logo.png" alt="PGS company logo" class="page-logo"></a>
+    </header>
+
+    <nav>
+        <p class="text-bold">iTunes api example</p>
+        <div class="page-order">
+            <input type="text" name="search" class="page-search" placeholder="Search songs...">
+            <button class="page-button">search</button>
+        </div>
+        <p class="page-instruction">Search by song title, author, song number, lyrics, catalog or copyright owner</p>
+    </nav>
+
+    <main>
+        <section class="search-results">
+        </section>
+        <section class="search-boxes">
+        </section>
+        <section class="prev-next">
+            <button id="previous-page">&lt;&lt; prev</button>
+            <button id="next-page">next &gt;&gt;</button>
+            <div>
+                <ul class="pagination">
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="foot-text">Powered by PGS</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
