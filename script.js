@@ -103,9 +103,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             currentPage++; // if we can, change active class to next li element
                             $(".pagination li").removeClass('active');
                             $(".search-item").hide();
-                            var grandTotal = limitPerPage * currentPage;
+                            let grandTotal = limitPerPage * currentPage;
                             // loop through total items, selecting a new set of items based on page number
-                            for (var i = grandTotal - limitPerPage; i < grandTotal; i++) {
+                            for (let i = grandTotal - limitPerPage; i < grandTotal; i++) {
                                 $(".search-item:eq(" + i + ")").show();
                             }
                             $(".pagination li.current-page:eq(" + (currentPage - 1) + ")").addClass('active');
