@@ -6,17 +6,17 @@ body {
 
 @font-face {
     font-family: Lato;
-    src: url(fonts/Lato-Regular.ttf);
+    src: url(../fonts/Lato-Regular.ttf);
 }
 
 @font-face {
     font-family: LatoLight;
-    src: url(fonts/Lato-Light.ttf);
+    src: url(../fonts/Lato-Light.ttf);
 }
 
 @font-face {
     font-family: LatoBold;
-    src: url(fonts/Lato-Bold.ttf);
+    src: url(../fonts/Lato-Bold.ttf);
 }
 
 header {
@@ -38,22 +38,24 @@ main {
     min-width: 360px;
 }
 
-.pagination {
-    position: fixed;
-    top: 1000px;
-    left: 1000px;
+.loaderCont {
     display: none;
 }
 
-.active {
-    color: #FFFF00;
-    background: #FFFF00;
+.visible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 a {
     text-decoration: none;
     color: #000000;
-    cursor: url(images/cursor.png), auto;
+    cursor: url(../images/cursor.png), auto;
 }
 
 .page-logo {
@@ -99,7 +101,7 @@ a {
 
 .page-button:hover {
     background: #f45e00;
-    cursor: url(images/cursor.png), auto;
+    cursor: url(../images/cursor.png), auto;
 }
 
 .page-instruction {
@@ -109,6 +111,9 @@ a {
     margin: 0;
     font-family: LatoLight;
     font-size: 12px;
+}
+.reset {
+    padding-top: 0;
 }
 
 .text-bold {
@@ -162,7 +167,7 @@ a {
     -webkit-box-shadow: 0 0 10px 0 rgba(150, 145, 150, 1);
     -moz-box-shadow: 0 0 10px 0 rgba(150, 145, 150, 1);
     box-shadow: 0 0 10px 0 rgba(150, 145, 150, 1);
-    cursor: url(images/cursor.png), auto;
+    cursor: url(../images/cursor.png), auto;
 }
 
 .song-image {
@@ -174,7 +179,7 @@ a {
     -webkit-box-shadow: 0 0 10px 0 rgba(150, 145, 150, 1);
     -moz-box-shadow: 0 0 10px 0 rgba(150, 145, 150, 1);
     box-shadow: 0 0 10px 0 rgba(150, 145, 150, 1);
-
+    font-size: 12px;
 }
 
 .song-title {
@@ -214,7 +219,7 @@ a {
     width: 60%;
 }
 
-.prev-next {
+.buttons-cont {
     display: none;
 }
 
@@ -244,7 +249,7 @@ a {
 #previous-page:hover,
 #next-page:hover {
     background: #f45e00;
-    cursor: url(images/cursor.png), auto;
+    cursor: url(../images/cursor.png), auto;
 }
 
 footer {
@@ -276,7 +281,7 @@ footer {
 
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .search-boxes {
         margin: 0 auto;
         width: 640px;
@@ -289,7 +294,7 @@ footer {
 
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .search-boxes {
         margin: 0 auto;
         width: 304px;
